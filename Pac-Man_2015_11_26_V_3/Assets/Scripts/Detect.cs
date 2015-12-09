@@ -8,7 +8,7 @@ public class Detect : MonoBehaviour {
 	[Tooltip("Checks for all objects with listed tags")]
 	public string[] targetTags = {"Untagged"}; //<- Add to and/or change this list in the inspector as we need
 
-	 public bool wayClear = true;
+	public bool wayClear = true;
 
 	public bool WayClear(){
 		return(wayClear);

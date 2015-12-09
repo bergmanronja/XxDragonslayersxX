@@ -10,33 +10,25 @@ public class WinScreen : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () 
-	{
+	void Start () {
+
 		MainMenu = MainMenu.GetComponent<Button> ();
 		QuitGame = QuitGame.GetComponent<Button> ();
 		NextLevel = NextLevel.GetComponent<Button> ();
-
-
 	}
 	
-	public void StartScreenReturn()
-
-	{
+	public void StartScreenReturn(){
 
 		Application.LoadLevel (1);
-
 	}
 
-	public void GameTurnOff()
-
-	{
+	public void GameTurnOff(){
 
 		Application.Quit ();
-
 	}
 
-	public void NextGame()
-	{
+	public void NextGame(){
+
 		Application.LoadLevel (2);
 	}
 

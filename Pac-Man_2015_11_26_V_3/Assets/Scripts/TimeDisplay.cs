@@ -11,7 +11,6 @@ public class TimeDisplay : MonoBehaviour {
 	void Start () {
 
 		SM = GameObject.Find ("_statsManager").GetComponent<StatsManager> ();
-	
 	}
 	
 	// Update is called once per frame

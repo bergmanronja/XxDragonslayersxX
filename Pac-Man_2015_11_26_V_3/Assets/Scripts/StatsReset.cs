@@ -8,9 +8,4 @@ public class StatsReset : MonoBehaviour {
 
 		GameObject.Find ("_statsManager").GetComponent<StatsManager> ().Reset ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
