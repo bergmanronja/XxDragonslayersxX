@@ -16,7 +16,6 @@ public class BonusPointSpawn : MonoBehaviour {
 	public GameObject BP5;
 	public StatsManager SM;
 	
-	
 	//Vid start så stänger man av bonus frukterna, för att sedan activera dem senare.
 	public void Start()
 	{
