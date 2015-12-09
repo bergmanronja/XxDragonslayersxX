@@ -19,7 +19,7 @@ CollisionEventsWithPoints - PacManUpToDate
 
 Detect - PacManUpToDate -> Detectors
 
-DisplayHighscore - <i>(GameOver scene)</i> DisplayHighscore, <i>(WinScreen)</i> Highscore
+DisplayHighscore - <i>(GameOver scene)</i> Highscore, <i>(WinScreen)</i> Highscore
 
 DisplayScore - <i>(GameOver scene)</i> ScoreText, <i>(WinScreen)</i> ScoreText
 
