@@ -11,7 +11,6 @@ public class StatsManager : MonoBehaviour {
 
 	public int[] highscoreList;
 
-
 	// Use this for initialization
 	void Start () {
 

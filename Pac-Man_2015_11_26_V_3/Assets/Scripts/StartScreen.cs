@@ -8,52 +8,36 @@ public class StartScreen : MonoBehaviour {
 	public Button startButton;
 	public Button exitButton;
 
-
-
 	// Use this for initialization
-	void Start () 
-	{
+	void Start () {
 
 		exitMenu = exitMenu.GetComponent<Canvas>();
 		startButton = startButton.GetComponent<Button>();
 		exitButton = exitButton.GetComponent<Button>();
 		exitMenu.enabled = false;
-
 		}
 
-	public void ExitButton()
-	{
+	public void ExitButton() {
+
 		exitMenu.enabled = true;
 		startButton.enabled = false;
 		exitButton.enabled = false;
-
 	}
 
-	public void NoButtonPress()
-	{
+	public void NoButtonPress() {
+
 		exitMenu.enabled = false;
 		startButton.enabled = true;
 		exitButton.enabled = true;
-
 	}
 
-	public void StartGame()
+	public void StartGame() {
 
-	{
 		Application.LoadLevel (2);
-
 	}
 
-	public void QuitGame()
-
-	{
+	public void QuitGame() {
 
 		Application.Quit ();
-
 	}
-
-
-
-
-
 }

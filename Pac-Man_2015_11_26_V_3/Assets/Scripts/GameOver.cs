@@ -4,35 +4,22 @@ using System.Collections.Generic;
 
 public class GameOver : MonoBehaviour {
 
-
 	public Button quitGame;
-
 	public Button mainMenu;
-
-
-	void Start () 
-	{
+	
+	void Start () {
 
 		quitGame = quitGame.GetComponent<Button> ();
 		mainMenu = mainMenu.GetComponent<Button> ();
-	
 	}
 	
-	public void MainMenu()
-
-	{
+	public void MainMenu(){
 
 		Application.LoadLevel (1);
-
 	}
 
-	public void ExitGame()
-
-	{
+	public void ExitGame(){
 
 		Application.Quit ();
-
 	}
-
-
 }

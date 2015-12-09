@@ -7,11 +7,9 @@ public class DisplayScore : MonoBehaviour {
 	public StatsManager SM;
 	public GUIText scoreText;
 
-	void Start () 
-	{
+	void Start () {
 	
 		SM = GameObject.Find ("_statsManager").GetComponent<StatsManager> ();
 		scoreText.text = "Score: " + SM.playerScore.ToString();
 	}
-
 }
