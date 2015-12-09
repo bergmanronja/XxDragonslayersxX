@@ -1,6 +1,10 @@
 fileFormatVersion: 2
 guid: 27bda5a9b2a078741bd2ad6380654393
+<<<<<<< HEAD
 timeCreated: 1449651316
+=======
+timeCreated: 1449653339
+>>>>>>> refs/remotes/origin/ronja
 licenseType: Free
 NativeFormatImporter:
   userData: 
