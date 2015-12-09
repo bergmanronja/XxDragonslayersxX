@@ -5,4 +5,4 @@ But you don't wanna get these conflicts where somebody made a scene change and s
 
 Jobba <b><i>INTE</i></b> i samma scen! ok? ok.
 
-xMapp = saker som inte används ännu (från originalprojektet)
+xMapp = saker som inte används ännu (från originalprojektet) (används dem, flytta till en annan mapp. Då är det bara att ta bort xMapparna i slutet av projektet.)
