@@ -4,3 +4,5 @@
 But you don't wanna get these conflicts where somebody made a scene change and sombody else did a scene change and they don't combind together and it's a mess. So somebody's changes are gonna be thrown out, and you will have to redo."
 
 Jobba <b><i>INTE</i></b> i samma scen! ok? ok.
+
+xMapp = saker som inte används ännu (från originalprojektet)
