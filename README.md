@@ -6,3 +6,49 @@ But you don't wanna get these conflicts where somebody made a scene change and s
 Jobba <b><i>INTE</i></b> i samma scen! ok? ok.
 
 xMapp = saker som inte används ännu (från originalprojektet) (används dem, flytta till en annan mapp. Då är det bara att ta bort xMapparna i slutet av projektet.)
+
+----------------
+
+<b>skript - objekt</b>
+
+BonusPointSpawn - PacManUpToDate
+
+CollisionEvents -
+
+CollisionEventsWithPoints - PacManUpToDate
+
+Detect - PacManUpToDate -> Detectors
+
+DisplayHighscore - <i>(GameOver scene)</i> DisplayHighscore, <i>(WinScreen)</i> Highscore
+
+DisplayScore - <i>(GameOver scene)</i> ScoreText, <i>(WinScreen)</i> ScoreText
+
+Exit - PacManUpToDate -> Main Camera
+
+Flicker - Lights -> Fire_Flickeringlight
+
+GameOver - <i>(Scene: GameOver)</i> GameOver
+
+GhostAI - GhostYY
+
+LifeCounter - ScoreCounter -> tex_life
+
+LoadStart - <i>(LoadStart scene)</i> Main Camera
+
+PacManControl - PacManUpToDate
+
+RotatinCoins - mod_coin
+
+RotationDiamonds - mod_stone
+
+StartScreen - <i>(StartScreen scene)</i> StartScreen
+
+StatsManager - <i>(LoadStart scene)</i> _statsManager
+
+StatsReset - <i>(StartScreen scene)</i> StatsReset
+
+Teleportation - mod_wall_gate
+
+TimeDisplay - gameTime
+
+WinScreen - <i>(WinScreen)</i> WinScreen
