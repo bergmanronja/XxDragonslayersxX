@@ -21,7 +21,7 @@ Detect - PacManUpToDate -> Detectors
 
 DisplayHighscore - <i>(GameOver scene)</i> Highscore, <i>(WinScreen)</i> Highscore
 
-DisplayScore - <i>(GameOver scene)</i> ScoreText, <i>(WinScreen)</i> ScoreText
+<strike>DisplayScore - <i>(GameOver scene)</i> ScoreText, <i>(WinScreen)</i> ScoreText</strike> (se DisplayHighscore)
 
 Exit - PacManUpToDate -> Main Camera
 
@@ -45,7 +45,7 @@ StartScreen - <i>(StartScreen scene)</i> StartScreen
 
 StatsManager - <i>(LoadStart scene)</i> _statsManager
 
-StatsReset - <i>(StartScreen scene)</i> StatsReset
+<strike>StatsReset - <i>(StartScreen scene)</i> StatsReset</strike> (Se StartScreen)
 
 Teleportation - mod_wall_gate
 
