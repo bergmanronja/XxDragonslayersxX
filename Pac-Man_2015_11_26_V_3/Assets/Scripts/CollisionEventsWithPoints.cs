@@ -17,6 +17,9 @@ public class CollisionEventsWithPoints : MonoBehaviour {
 	public GameObject[] Ghosts; 
 
 	public StatsManager SM;
+
+	private float moveSpeed = 5f;
+	private float speed;
 	
 	// Use this for initialization
 	void Start () {
@@ -46,6 +49,7 @@ public class CollisionEventsWithPoints : MonoBehaviour {
 				Ghosts[i].GetComponent<GhostAI>().RestartGhost();
 			}
 			transform.position = startPos;
+			speed = moveSpeed;
 			pacmanlives--;
 			lifeDisplay.LifeChange(pacmanlives);
 			if(pacmanlives<=0)

@@ -5,12 +5,15 @@ public class PacManControl : MonoBehaviour {
 
 	[Tooltip("visual model object here")]
 	public GameObject vizualiser;
-	public float speed = 2; // <- Just a recommended base speed. Feel free to change to whatever feels right.
+	public float speed = 5f; // <- Just a recommended base speed. Feel free to change to whatever feels right.
+	float slowSpeed = 1f;
+	float fastSpeed = 10f;
 	float curSpeed;
 	public KeyCode up = KeyCode.UpArrow,down = KeyCode.DownArrow,right = KeyCode.RightArrow,left = KeyCode.LeftArrow; 
 	Vector3 curDirection;
 	public Detect upSide, downSide, rightSide, leftSide;		
 	bool XZ, posNeg;
+	public GameObject mazeWallStraight;
 	public StatsManager SM;
 
 	// ^ is basically a 2bit system to determine between 4 different states (up, down, right, left) ...
@@ -81,5 +84,31 @@ public class PacManControl : MonoBehaviour {
 			curDirection = Vector3.left;
 		}
 		curSpeed = speed;
+	}
+
+	void OnTriggerEnter (Collider col){ // när spelaren rör dem
+		
+		if (col.tag == "Slow") {
+			
+			speed = slowSpeed;
+		}
+
+		if (col.tag == "Fast") {
+
+			speed = fastSpeed;
+		}
+
+		if (col.tag == "SpecialPoint") {
+			
+			mazeWallStraight.SetActive(false); // sätter väggen till inaktiv = syns inte
+		}
+	}
+
+	void OnTriggerExit (Collider col){ // när spelaren slutar röra dem
+		
+		if (col.tag == "Slow" || col.tag == "Fast") {
+			
+			speed = 5f;
+		}
 	}
 }
