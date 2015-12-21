@@ -4,7 +4,7 @@ using System.Collections;
 
 public class PacManScript : MonoBehaviour {
 
-    float speed = 10.0f;
+    float speed = 3.0f;
     public static bool eat = false;
     float timer;
     bool hit;
@@ -15,14 +15,11 @@ public class PacManScript : MonoBehaviour {
 
     void Start()
     {
-       /* 
         cross = GameObject.Find("CrossPac");
         cross.SetActive(false);
         skull = (AudioClip)Resources.Load("Skull", typeof(AudioClip));
-       */
     }
 
-    /*
     void OnCollisionEnter(Collision other)
     {
         //PackMan kolliderar med en ball
@@ -30,15 +27,15 @@ public class PacManScript : MonoBehaviour {
         {
             AudioSource.PlayClipAtPoint(skull, transform.position);
             Destroy(other.gameObject);
-            //PointsScript.points.Points(1);
+            PointsScript.points.Points(1);
         }
 
         //PackMan kolliderar med en frukt
         if (other.gameObject.tag == "Fruit")
         {
             Destroy(other.gameObject);
-            //PointsScript.points.Points(10);
-            //SpawnScript.spawn.fruitBool = true;
+            PointsScript.points.Points(10);
+            SpawnScript.spawn.fruitBool = true;
         }
 
         //PackMan kolliderar med ett piller
@@ -51,7 +48,7 @@ public class PacManScript : MonoBehaviour {
             foreach (GameObject g in GameObject.FindGameObjectsWithTag("Ghost"))
             {
               
-                    //g.GetComponent<Ghost>().Flee();
+                    g.GetComponent<Ghost>().Flee();
             }
             
 
@@ -69,7 +66,7 @@ public class PacManScript : MonoBehaviour {
             else
             {
                 //Destroy(other.gameObject);
-                //PointsScript.points.Points(30);
+                PointsScript.points.Points(30);
 
             }
 
@@ -88,7 +85,7 @@ public class PacManScript : MonoBehaviour {
 
 
 
-    }*/
+    }
 
     void Move() //PacMans rörelse förmågor
     {
@@ -115,7 +112,7 @@ public class PacManScript : MonoBehaviour {
     }
         void Update()
     {
-       /* //Om PacMan har tagit upp ett piller ska han istället för att bli dödad av spöken äta dem under en viss tid.
+        //Om PacMan har tagit upp ett piller ska han istället för att bli dödad av spöken äta dem under en viss tid.
         if (eat == true)
         {
             timer += Time.deltaTime;
@@ -125,12 +122,12 @@ public class PacManScript : MonoBehaviour {
                 eat = false;
                 cross.SetActive(false);
                 timer = 0;
-            }*/
+            }
         }
         
-        /*if (hit)
+        if (hit)
         {
-            //PointsScript.points.Damage();
+            PointsScript.points.Damage();
             GetComponent<Rigidbody>().position = new Vector3(-11, -0.5f, -8);
             hit = false;
 
@@ -141,6 +138,8 @@ public class PacManScript : MonoBehaviour {
         {
             Move();
         }
-*/
+        
 
     }
+
+}
