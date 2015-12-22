@@ -4,7 +4,7 @@ using System.Collections;
 
 public class PacManScript : MonoBehaviour {
 
-    float speed = 3.0f;
+    float speed = 8.0f;
     public static bool eat = false;
     float timer;
     bool hit;
@@ -25,7 +25,7 @@ public class PacManScript : MonoBehaviour {
         //PackMan kolliderar med en ball
         if (other.gameObject.tag == "Ball")
         {
-            AudioSource.PlayClipAtPoint(skull, transform.position);
+
             Destroy(other.gameObject);
             PointsScript.points.Points(1);
         }
