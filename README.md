@@ -5,7 +5,26 @@ But you don't wanna get these conflicts where somebody made a scene change and s
 
 Jobba <b><i>INTE</i></b> i samma scen! ok? ok.
 
-xMapp = saker som inte används ännu (från originalprojektet) (används dem, flytta till en annan mapp. Då är det bara att ta bort xMapparna i slutet av projektet.)
+----------------
+
+funkar inte pac skriptet på pacman, byt det till sphere skriptet eller ngt lmaO....
+
+<b>i unity:</b>
+
+objekt som <i>ska</i> användas ligger i <b>prefab-mappen</b> i <i>asset</i>
+
+markera ett objekt & tryck på <i>v</i> för att vertexsnappa ihop väggarna
+ctrl + d = duplicera
+
+ändrar man ett material måste man <b><i>duplicera</b></i> det, annars ändras <i>alla</i> objekt som har det materialet
+
+<b>när banan är färdig:</b> skapa ett empty gameobject (namnge det också) & lägg in allt i hierarchy i det. (lägg det prefab:et i mappen Levels under Prefabs också) man <i>borde</i> kunna jobba i scener (asset -> scenes -> levels) direkt i mastern utan att det blir några problem (så länge de inte heter samma/är samma scen), men ha ett säkerhetsprefab också.
+
+exportera prefaben genom att högerklicka & välj export package
+
+<b>navmesh</b>: i unity, markera ett objekt, tryck på <i>navigation</i> bredvid <i>inspector</i>, tryck på bake och sedan bake igen i nedre högra hörnet. markerar den inte alla gångytor: byt agent radius
+
+vid banbygge kan man göra en fjärdedel/halva banan, sedan lägga alla delar i ett empty gameobject & copypaste det(duplicera) & bara ändra rotationen på den för att få en hel bana.
 
 ----------------
 
