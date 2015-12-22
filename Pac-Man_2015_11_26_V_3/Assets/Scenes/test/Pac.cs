@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Pac : MonoBehaviour {
 
-    float speed = 20f;
+    float speed = 1f;
 
 	// Use this for initialization
 	void Start () {
@@ -39,4 +39,13 @@ public class Pac : MonoBehaviour {
             transform.RotateAround(GetComponent<Rigidbody>().position, Vector3.up, 180);
         }
     }
+
+	void OnCollisionEnter(Collision other)
+	{
+		//PackMan kolliderar med en ball
+		if (other.gameObject.tag == "Ball") {
+			
+			Destroy (other.gameObject);
+		}
+	}
 }
