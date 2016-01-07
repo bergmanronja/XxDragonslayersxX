@@ -9,15 +9,11 @@ public class PacManScript : MonoBehaviour {
     float timer;
     bool hit;
     GameObject cross;
-    AudioClip skull;
     
-  
-
     void Start()
     {
         cross = GameObject.Find("CrossPac");
 //        cross.SetActive(false);
-        skull = (AudioClip)Resources.Load("Skull", typeof(AudioClip));
     }
 
     void OnCollisionEnter(Collision other)
@@ -48,7 +44,7 @@ public class PacManScript : MonoBehaviour {
             foreach (GameObject g in GameObject.FindGameObjectsWithTag("Ghost"))
             {
               
-                    g.GetComponent<Ghost>().Flee();
+                    g.GetComponent<NewGhost>().Flee();
             }
             
 

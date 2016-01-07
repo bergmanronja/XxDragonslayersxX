@@ -26,43 +26,8 @@ public class SpawnScript : MonoBehaviour {
         spawn = this;
         score = GameObject.Find("ScoreObject");
         DontDestroyOnLoad(score);
-        //Vectorer för spöken på test bana 
-        ghostVector[0] = new Vector3 (-9, -2, -2);
-        ghostVector[1] = new Vector3 (-13, -2, 2);
-        ghostVector[2] = new Vector3 (-9,-2, 2);
-        ghostVector[3] = new Vector3(-12, -2, -2);
-
-        fruitVector[0] = new Vector3(-22, -0.5f, -8);
-        fruitVector[1] = new Vector3(-22, -0.5f, 8);
-        fruitVector[2] = new Vector3(0, -0.5f, -8);
-        fruitVector[3] = new Vector3(0, -0.5f, -8);
-
-
-  
-        spawnMap(map.transform.position);
-
-        spawnInky(ghostVector[0]);
-        spawnPinky(ghostVector[1]);
-        spawnClyde(ghostVector[2]);
-        spawnBlinky(ghostVector[3]);
-
+        
         fruitBool = true;
-        
-    }
-
-    //Spawnar PacMan
-    public void pacManSpawn(Vector3 pacManVector)
-    {
-        Instantiate(pacMan, pacManVector, Quaternion.identity);
- 
-    }
-
-    //Startar en ny bana med bollar och en PacMan.
-    void spawnMap(Vector3 mapPosition)
-    {
-        Instantiate(map, mapPosition, Quaternion.identity);
-        pacManSpawn(new Vector3(-11, -0.5f, -8));
-        
         
     }
 
@@ -78,25 +43,7 @@ public class SpawnScript : MonoBehaviour {
         Instantiate(pill, pillVector, Quaternion.identity);
     }
 
-    //Spawnar ett spöke
-    void spawnInky(Vector3 ghostVector)
-    {
-        Instantiate(ghostI, ghostVector, Quaternion.identity);
-    }
-    void spawnPinky(Vector3 ghostVector)
-    {
-        Instantiate(ghostP, ghostVector, Quaternion.identity);
-    }
-    void spawnBlinky(Vector3 ghostVector)
-    {
-        Instantiate(ghostB, ghostVector, Quaternion.identity);
-    }
-    void spawnClyde(Vector3 ghostVector)
-    {
-        Instantiate(ghostC, ghostVector, Quaternion.identity);
-    }
-
-
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
@@ -121,7 +68,8 @@ public class SpawnScript : MonoBehaviour {
             if (fruitTimer >= ScoreScript.score.fruitDestroyTimer)
             {
                 Destroy(GameObject.FindWithTag("Fruit"));
-                fruitTimer = 0;            }
+                fruitTimer = 0;            
+			}
         }
 
      
