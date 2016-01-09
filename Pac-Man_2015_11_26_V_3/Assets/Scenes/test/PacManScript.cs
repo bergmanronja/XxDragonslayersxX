@@ -53,7 +53,7 @@ public class PacManScript : MonoBehaviour {
             foreach (GameObject g in GameObject.FindGameObjectsWithTag("Ghost"))
             {
               
-                    g.GetComponent<Ghost>().Flee();
+                    //g.GetComponent<Ghost>().Flee();
             }
             
 
