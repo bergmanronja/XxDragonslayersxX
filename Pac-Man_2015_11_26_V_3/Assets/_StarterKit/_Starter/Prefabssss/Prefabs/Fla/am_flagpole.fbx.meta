@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: b735029feef793a499bb895e1d0964b4
+timeCreated: 1452252401
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: am_flag
+    100002: am_flag2
+    100004: //RootNode
+    100006: bot1
+    100008: bot1 1
+    100010: bot2
+    100012: bot2 1
+    100014: bot3
+    100016: bot3 1
+    100018: FlagSplit_Root
+    100020: FlagSplit_Root1
+    100022: joint3
+    100024: joint3 1
+    100026: mid
+    100028: mid 1
+    100030: pPlane3
+    100032: sm_flagpole
+    100034: Top1
+    100036: Top1 1
+    100038: top2
+    100040: top2 1
+    100042: top3
+    100044: top3 1
+    400000: am_flag
+    400002: am_flag2
+    400004: //RootNode
+    400006: bot1
+    400008: bot1 1
+    400010: bot2
+    400012: bot2 1
+    400014: bot3
+    400016: bot3 1
+    400018: FlagSplit_Root
+    400020: FlagSplit_Root1
+    400022: joint3
+    400024: joint3 1
+    400026: mid
+    400028: mid 1
+    400030: pPlane3
+    400032: sm_flagpole
+    400034: Top1
+    400036: Top1 1
+    400038: top2
+    400040: top2 1
+    400042: top3
+    400044: top3 1
+    2300000: sm_flagpole
+    3300000: sm_flagpole
+    4300000: am_flag2
+    4300002: am_flag
+    4300004: sm_flagpole
+    7400000: Flag_Loop
+    9500000: //RootNode
+    13700000: am_flag
+    13700002: am_flag2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Flag_Loop
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: FlagSplit_Root
+        weight: 1
+      - path: FlagSplit_Root/mid
+        weight: 1
+      - path: FlagSplit_Root/mid/joint3
+        weight: 1
+      - path: FlagSplit_Root/mid/joint3/bot1
+        weight: 1
+      - path: FlagSplit_Root/mid/joint3/bot1/bot2
+        weight: 1
+      - path: FlagSplit_Root/mid/joint3/bot1/bot2/bot3
+        weight: 1
+      - path: FlagSplit_Root/mid/joint3/Top1
+        weight: 1
+      - path: FlagSplit_Root/mid/joint3/Top1/top2
+        weight: 1
+      - path: FlagSplit_Root/mid/joint3/Top1/top2/top3
+        weight: 1
+      - path: FlagSplit_Root1
+        weight: 1
+      - path: FlagSplit_Root1/mid 1
+        weight: 1
+      - path: FlagSplit_Root1/mid 1/joint3 1
+        weight: 1
+      - path: FlagSplit_Root1/mid 1/joint3 1/bot1 1
+        weight: 1
+      - path: FlagSplit_Root1/mid 1/joint3 1/bot1 1/bot2 1
+        weight: 1
+      - path: FlagSplit_Root1/mid 1/joint3 1/bot1 1/bot2 1/bot3 1
+        weight: 1
+      - path: FlagSplit_Root1/mid 1/joint3 1/Top1 1
+        weight: 1
+      - path: FlagSplit_Root1/mid 1/joint3 1/Top1 1/top2 1
+        weight: 1
+      - path: FlagSplit_Root1/mid 1/joint3 1/Top1 1/top2 1/top3 1
+        weight: 1
+      - path: pPlane3
+        weight: 1
+      - path: pPlane3/am_flag
+        weight: 1
+      - path: pPlane3/am_flag2
+        weight: 1
+      - path: sm_flagpole
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

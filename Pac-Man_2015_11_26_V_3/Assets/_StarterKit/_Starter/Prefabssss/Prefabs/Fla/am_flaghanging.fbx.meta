@@ -1,0 +1,210 @@
+fileFormatVersion: 2
+guid: 83e2cfc8becf65042ae3a6f27e8b07eb
+timeCreated: 1452252401
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: am_hangingflag
+    100004: am_hangingflag1
+    100006: back
+    100008: Flag_Hanging_Root
+    100010: Flag_Hanging_Root1
+    100012: LeftBot
+    100014: LeftBot 1
+    100016: LeftMid
+    100018: LeftMid 1
+    100020: LeftTop
+    100022: LeftTop 1
+    100024: MidBottom
+    100026: MidBottom 1
+    100028: MidTop
+    100030: MidTop 1
+    100032: pPlane3
+    100034: RightBot
+    100036: RightBot 1
+    100038: RightMid
+    100040: RightMid 1
+    100042: RightTop
+    100044: RightTop 1
+    100046: sm_flagstand
+    100048: Top
+    100050: Top 1
+    400000: //RootNode
+    400002: am_hangingflag
+    400004: am_hangingflag1
+    400006: back
+    400008: Flag_Hanging_Root
+    400010: Flag_Hanging_Root1
+    400012: LeftBot
+    400014: LeftBot 1
+    400016: LeftMid
+    400018: LeftMid 1
+    400020: LeftTop
+    400022: LeftTop 1
+    400024: MidBottom
+    400026: MidBottom 1
+    400028: MidTop
+    400030: MidTop 1
+    400032: pPlane3
+    400034: RightBot
+    400036: RightBot 1
+    400038: RightMid
+    400040: RightMid 1
+    400042: RightTop
+    400044: RightTop 1
+    400046: sm_flagstand
+    400048: Top
+    400050: Top 1
+    2300000: sm_flagstand
+    3300000: sm_flagstand
+    4300000: am_hangingflag
+    4300002: sm_flagstand
+    4300004: am_hangingflag1
+    7400000: Flag_Hanging_Loop
+    9500000: //RootNode
+    13700000: am_hangingflag
+    13700002: am_hangingflag1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Flag_Hanging_Loop
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: am_hangingflag
+        weight: 1
+      - path: am_hangingflag1
+        weight: 1
+      - path: back
+        weight: 1
+      - path: Flag_Hanging_Root
+        weight: 1
+      - path: Flag_Hanging_Root/Top
+        weight: 1
+      - path: Flag_Hanging_Root/Top/LeftTop
+        weight: 1
+      - path: Flag_Hanging_Root/Top/LeftTop/LeftMid
+        weight: 1
+      - path: Flag_Hanging_Root/Top/LeftTop/LeftMid/LeftBot
+        weight: 1
+      - path: Flag_Hanging_Root/Top/MidTop
+        weight: 1
+      - path: Flag_Hanging_Root/Top/MidTop/MidBottom
+        weight: 1
+      - path: Flag_Hanging_Root/Top/RightTop
+        weight: 1
+      - path: Flag_Hanging_Root/Top/RightTop/RightMid
+        weight: 1
+      - path: Flag_Hanging_Root/Top/RightTop/RightMid/RightBot
+        weight: 1
+      - path: Flag_Hanging_Root1
+        weight: 1
+      - path: Flag_Hanging_Root1/Top 1
+        weight: 1
+      - path: Flag_Hanging_Root1/Top 1/LeftTop 1
+        weight: 1
+      - path: Flag_Hanging_Root1/Top 1/LeftTop 1/LeftMid 1
+        weight: 1
+      - path: Flag_Hanging_Root1/Top 1/LeftTop 1/LeftMid 1/LeftBot 1
+        weight: 1
+      - path: Flag_Hanging_Root1/Top 1/MidTop 1
+        weight: 1
+      - path: Flag_Hanging_Root1/Top 1/MidTop 1/MidBottom 1
+        weight: 1
+      - path: Flag_Hanging_Root1/Top 1/RightTop 1
+        weight: 1
+      - path: Flag_Hanging_Root1/Top 1/RightTop 1/RightMid 1
+        weight: 1
+      - path: Flag_Hanging_Root1/Top 1/RightTop 1/RightMid 1/RightBot 1
+        weight: 1
+      - path: pPlane3
+        weight: 1
+      - path: sm_flagstand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
