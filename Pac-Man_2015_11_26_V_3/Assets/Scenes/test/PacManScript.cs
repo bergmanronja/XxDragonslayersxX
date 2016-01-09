@@ -10,16 +10,11 @@ public class PacManScript : MonoBehaviour {
     bool hit;
     GameObject cross;
     AudioClip skull;
-
-	//int run = 1;
-	public Animator pmanitest;
+    
+  
 
     void Start()
     {
-
-		pmanitest = GetComponent<Animator> ();
-		pmanitest.Play ("Idle");
-
         cross = GameObject.Find("CrossPac");
 //        cross.SetActive(false);
         skull = (AudioClip)Resources.Load("Skull", typeof(AudioClip));
@@ -53,7 +48,7 @@ public class PacManScript : MonoBehaviour {
             foreach (GameObject g in GameObject.FindGameObjectsWithTag("Ghost"))
             {
               
-                    //g.GetComponent<Ghost>().Flee();
+                    g.GetComponent<Ghost>().Flee();
             }
             
 
@@ -94,35 +89,27 @@ public class PacManScript : MonoBehaviour {
 
     void Move() //PacMans rörelse förmågor
     {
-
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector3.forward * speed * Time.deltaTime);
-			pmanitest.SetInteger ("run", 1);
-			//pmanitest.Play ("Running");
         }
 
         if (Input.GetKey(KeyCode.A))
         {
             transform.RotateAround(GetComponent<Rigidbody>().position, Vector3.down, 180 * Time.deltaTime);
-			pmanitest.SetInteger ("run", 1);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
             transform.RotateAround(GetComponent<Rigidbody>().position, Vector3.up, 180 * Time.deltaTime);
-			pmanitest.SetInteger ("run", 1);
         }
 
-		if (Input.GetKeyDown (KeyCode.S)) {
-			transform.RotateAround (GetComponent<Rigidbody> ().position, Vector3.up, 180);
-			pmanitest.SetInteger ("run", 1);
-		} 
-		else {
-			pmanitest.SetInteger ("run", 0);
-		}
-    }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            transform.RotateAround(GetComponent<Rigidbody>().position, Vector3.up, 180);
+        }
 
+    }
         void Update()
     {
         //Om PacMan har tagit upp ett piller ska han istället för att bli dödad av spöken äta dem under en viss tid.
@@ -142,12 +129,17 @@ public class PacManScript : MonoBehaviour {
         {
             PointsScript.points.Damage();
             GetComponent<Rigidbody>().position = new Vector3(-11, -0.5f, -8);
-            hit = false;    
+            hit = false;
+
+            
         }
 
         else
         {
             Move();
         }
+        
+
     }
+
 }

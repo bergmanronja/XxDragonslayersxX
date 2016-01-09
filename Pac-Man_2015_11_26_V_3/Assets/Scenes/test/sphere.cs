@@ -15,7 +15,7 @@ public class sphere : MonoBehaviour
 
 	//public wallblah otherScript;
 
-	float moveSpeed = 0.25f;
+	float moveSpeed = 0.05f;
 	float turnSpeed = 2f;
 	float slowSpeed = 0.005f;
 
