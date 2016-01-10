@@ -5,6 +5,7 @@ using System.Collections;
 public class PacManScript : MonoBehaviour {
 
 	float speed = 3.0f;
+	float fastSpeed = 5.0f;
 	public static bool eat = false;
 	float timer;
 	bool hit;
@@ -88,8 +89,19 @@ public class PacManScript : MonoBehaviour {
 			transform.position = new Vector3(-11, -0.5f, 9);
 		}
 
+		if (other.tag == "Fast") {
+		
+			speed = fastSpeed;
+		}
 
+	}
 
+	void OnTriggerExit (Collider other)
+	{
+		if (other.tag == "Fast") {
+		
+			speed = 3.0f;
+		}
 	}
 
 	void Move() //PacMans rörelse förmågor
