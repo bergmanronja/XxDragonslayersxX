@@ -3,46 +3,44 @@ using System.Collections;
 
 public class spikeTrap : MonoBehaviour {
 
-	private bool trapActivated = false;
+	//bool trapActivated;
 
 	private float startTime;
 	private float currentTime;
 	private float activatedTrap;
 	private float inactiveTrap;
 
-	//public Animation trapAnimation;
-	//public Animator trapAnimation;
+	public Animator trapanimation;
 
 	// Use this for initialization
 	void Start () {
 
-		//trapAnimation = GetComponent<Animation> ();
-		//trapAnimation = GetComponent<Animator> ();
+		trapanimation = GetComponent<Animator> ();
+		trapanimation.enabled = false;
 		
-		InvokeRepeating ("StartTimerForSpikeTrapRepeat", 5f, 6f);
-	}
-
-	void Update(){
-
-		if (trapActivated == true) {
-			Debug.Log ("dead");
-		}
+		InvokeRepeating ("StartTimerForSpikeTrapRepeat", 2f, 4f);
+		//StartCoroutine (TimerForSpikeTrap ());
 	}
 
 	void StartTimerForSpikeTrapRepeat(){
 
+		trapanimation.enabled = true;
 		StartCoroutine (TimerForSpikeTrap ());
+		Debug.Log("Dead");
+		//trapanimation.enabled = false;
 	}
 
 	IEnumerator TimerForSpikeTrap(){
 
-		Debug.Log ("hej");
-		trapActivated = true;
-		//Animator.Play();
+		//Debug.Log ("true");
+		//trapActivated = true;
+		//trapanimation.Play ("trap");
+		//trapanimation.enabled = true; 
 
-		yield return new WaitForSeconds (1);
+		yield return new WaitForSeconds (2);
 
 		Debug.Log ("false");
-		trapActivated = false;
+		trapanimation.enabled = false;
+		//trapActivated = false;
 	}
 }
